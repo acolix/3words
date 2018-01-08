@@ -28,12 +28,15 @@ form.appendChild(out);
 
 function isvalidtriang(l1,l2,l3){
   var valid = l1+l2>l3 && Math.abs(l1-l2)<l3;
+  console.log(Math.abs(l1-l2),l1+l2,l1,l2);
+  console.log(valid);
   if (valid){return("isvalid")} else{return("not valid")};
 }
 
 function output (e){
-  e.preventDefault();
-  out.value=isvalidtriang(input1.value+input2.value+input3.value);
+  e.preventDefault()
+  console.log(input1.value);
+  out.value=isvalidtriang(+(input1.value),+(input2.value),+(input3.value));
  };
 form.addEventListener('submit',output);
 
