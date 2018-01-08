@@ -1,6 +1,6 @@
 var form =document.createElement('form');
 form.setAttribute('id','tripleform');
-form.setAtribute('oninput')
+//form.setAtribute('oninput')
 document.body.appendChild(form);
 var input1 = document.createElement('input');
 var input2 = document.createElement('input');
