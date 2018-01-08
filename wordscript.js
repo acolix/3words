@@ -27,7 +27,8 @@ form.appendChild(button);
 form.appendChild(out);
 
 function isvalidtriang(l1,l2,l3){
-  var valid = l1+l2>l3 && Math.abs(l1-l2)<l3;
+  function checkOneSide(l1,l2,l3){return(l1+l2>l3 && Math.abs(l1-l2)<l3)};
+  var valid = checkOneSide(l1,l2,l3) && checkOneSide(l3,l1,l2) && checkOneSide(l2,l3,l1);
   console.log(Math.abs(l1-l2),l1+l2,l1,l2);
   console.log(valid);
   if (valid){return("isvalid")} else{return("not valid")};
