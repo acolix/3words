@@ -20,7 +20,7 @@ out.setAttribute('for','in1 in2 in3');
 form.appendChild(input1);
 form.appendChild(input1);
 form.appendChild(input1);
-form.appendChild(submit);
+form.appendChild(button);
 form.appendChild(out);
 
 function output (e){
